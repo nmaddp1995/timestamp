@@ -1,11 +1,11 @@
 
 var express = require("express");
-var bodyParser = require("body-parser");
-var cors = require("cors");
+// var bodyParser = require("body-parser");
+// var cors = require("cors");
 
 var app = express();
-app.use(cors());
-app.use(bodyParser.json());
+// app.use(cors());
+// app.use(bodyParser.json());
 app.get('/',function(req,res){
   res.send("Pass the unix timestamp or a natural language date (example: January 1, 2016) to get the detail of date");
 });
