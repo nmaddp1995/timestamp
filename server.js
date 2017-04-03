@@ -7,7 +7,9 @@ var app = express();
 // app.use(cors());
 // app.use(bodyParser.json());
 app.get('/',function(req,res){
-  res.send("Pass the unix timestamp or a natural language date (example: January 1, 2016) to get the detail of date");
+  res.send("Pass the unix timestamp or a natural language date (example: January 1, 2016) to get the detail of date </br> </br> "+
+  "Such as : <ul> <li> <span style='color:red'>https://timestamp-nmaddp1995.herokuapp.com/December%2015,%202015</span>"+
+"<li><span style='color:red'> https://timestamp-nmaddp1995.herokuapp.com/1450137600 </span></ul>") ;
 });
 
 var monthName = ["January","February","March","April","May","June","July","August","September","October","November","December"];
